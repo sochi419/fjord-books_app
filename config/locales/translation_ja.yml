@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    models:
+      book: 本  #g
+
+    attributes:
+      book:
+        author: 著者  #g
+        memo: メモ  #g
+        picture: 写真  #g
+        title: 題名  #g  
+
+  buttons:
+    New: 新規作成
+    Back: 一覧に戻る
+    Show: 詳細
+    Edit: 編集
+    Destroy: 削除
+    Books: 内容一覧
