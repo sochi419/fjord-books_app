@@ -20,5 +20,5 @@
   <%= image_tag(@book.picture_url) if @book.picture.present? %>
 </p>
 
-<%= link_to (t 'buttons.Edit'), edit_book_path(@book) %> |
-<%= link_to (t 'buttons.Back'), books_path %>
+<%= link_to (t 'buttons.edit'), edit_book_path(@book) %> |
+<%= link_to (t 'buttons.back'), books_path %>

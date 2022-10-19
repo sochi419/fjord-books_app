@@ -11,9 +11,9 @@ ja:
         title: 題名  #g  
 
   buttons:
-    New: 新規作成
-    Back: 一覧に戻る
-    Show: 詳細
-    Edit: 編集
-    Destroy: 削除
-    Books: 内容一覧
+    new: 新規作成
+    back: 一覧に戻る
+    show: 詳細
+    edit: 編集
+    destroy: 削除
+    books: 内容一覧
