@@ -19,7 +19,7 @@ ja:
     books: 内容一覧
 
   messages:
-    book_was_successfully_created: 本の作成に成功しました。
-    book_was_successfully_updated: 本の編集に成功しました。
-    book_was_successfully_destroyed: 本の削除に成功しました。
-    are_you_sure: 本当によろしいですか?
+    created: "作成に成功しました。"
+    updated: "編集に成功しました。"
+    destroyed: "削除に成功しました。"
+    confirm: 本当によろしいですか?

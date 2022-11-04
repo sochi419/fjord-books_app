@@ -39,7 +39,7 @@ en:
     destroy: destroy
     books: books
   messages:
-    book_was_successfully_created: book_was_successfully_created
-    book_was_successfully_updated: book_was_successfully_updated
-    book_was_successfully_destroyed: book_was_successfully_destroyed
-    are_you_sure: are_you_sure?
+    created: successfully_created
+    updated: successfully_updated
+    destroyed: successfully_destroyed
+    confirm: are_you_sure?
