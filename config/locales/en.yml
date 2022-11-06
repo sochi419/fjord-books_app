@@ -31,3 +31,15 @@
 
 en:
   hello: "Hello world"
+  buttons:
+    new: new
+    back: back
+    show: show
+    edit: edit
+    destroy: destroy
+    books: books
+  messages:
+    created: successfully_created
+    updated: successfully_updated
+    destroyed: successfully_destroyed
+    confirm: are_you_sure?
