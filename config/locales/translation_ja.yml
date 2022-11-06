@@ -9,17 +9,3 @@ ja:
         memo: メモ  #g
         picture: 画像  #g
         title: 題名  #g
-      user:
-        email: メールアドレス
-        password: パスワード
-        password_confirmation: 確認用パスワード
-        remember_me: 次回から自動的にログイン
-      link:
-        users: ユーザ一覧
-  users:
-    index:
-      email: メールアドレス
-      show: 詳細
-      books: 本一覧
-    show:
-      back: 戻る
