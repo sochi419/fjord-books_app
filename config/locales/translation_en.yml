@@ -2,6 +2,8 @@ en:
   activerecord:
     models:
       book: Book  #g
+      user: User
+      report: Report
 
     attributes:
       book:
