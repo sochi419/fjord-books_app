@@ -4,6 +4,7 @@ en:
       book: Book  #g
       user: User
       report: Report
+      comment: comment
 
     attributes:
       book:
@@ -17,3 +18,13 @@ en:
         address: Address
         self_introduction: Self introduction
         avatar: "User image"
+      report:
+        title: title
+        content: content
+        created_at: created_at
+      comment:
+        content: content
+        created_at: created_at
+
+    messages:
+      nothing: nothing
