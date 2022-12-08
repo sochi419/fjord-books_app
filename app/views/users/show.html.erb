@@ -43,20 +43,20 @@
   <%= @user.followers.count %>
 </p>
 
-<%= link_to User.human_attribute_name(:following_list), user_followings_path(@user.id) %>
+<%= link_to User.human_attribute_name(:following_list), followings_user_path(@user.id) %>
 
 <br>
 
-<%= link_to User.human_attribute_name(:follower_list), user_followers_path(@user.id) %>
+<%= link_to User.human_attribute_name(:follower_list), followers_user_path(@user.id) %>
 
 <br>
 
 <% if current_user == @user %>
   <%= link_to t('views.common.edit'), edit_user_registration_path %>
 <% elsif current_user.following?(@user) %>
-  <%= link_to User.human_attribute_name(:unfollow), user_follows_path(@user.id), method: :delete %>
+  <%= link_to User.human_attribute_name(:unfollow), follow_path(@user.id), method: :delete %>
 <% else %>
-  <%= link_to User.human_attribute_name(:follow), user_follows_path(@user.id), method: :post %>
+  <%= link_to User.human_attribute_name(:follow),follows_path(@user.id), method: :post %>
 <% end %>
 
 <br>

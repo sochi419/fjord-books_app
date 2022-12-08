@@ -13,14 +13,14 @@ class User < ApplicationRecord
   has_many :followers, through: :reverse_of_follows, source: :follower
 
   def follow(user_id)
-    follows.create(followed_id: user_id)
+    follows.find_or_create_by(followed_id: user_id)
   end
 
   def unfollow(user_id)
-    follows.find_by(followed_id: user_id).destroy
+    follows.find_by(followed_id: user_id)&.destroy
   end
 
   def following?(user)
-    followings.include?(user)
+    followings.exists?(id: user.id)
   end
 end
