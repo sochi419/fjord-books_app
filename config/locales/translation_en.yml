@@ -22,4 +22,6 @@ en:
         follower_list: follower_list
         follow: follow
         unfollow: unfollow
-        none: no users
+        
+  messages:
+    none: no users

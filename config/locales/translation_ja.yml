@@ -22,4 +22,7 @@ ja:
         follower_list: フォロワーリスト
         follow: フォローする
         unfollow: フォローを外す
-        none: ユーザーはいません
+
+  messages:
+    none: ユーザーはいません
+        
