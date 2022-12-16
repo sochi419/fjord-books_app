@@ -3,13 +3,12 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'books#index'
   resources :books
-  resources :users, only: %i(index show)
 
-  resources :users do
+  resources :users, only: %i(index show) do
     member do
-      resources :follows, only: [:create, :destroy]
-      get 'followings' => 'follows#followings', as: 'followings'
-      get 'followers' => 'follows#followers', as: 'followers'
+      get 'followings'
+      get 'followers'
     end
   end
+  resources :follows, only: [:create, :destroy]
 end
