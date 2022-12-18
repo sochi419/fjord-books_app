@@ -15,9 +15,8 @@ class ReportsController < ApplicationController
 
   def edit; end
 
-  def create
-    @report = Report.new(report_params)
-    @report.user_id = current_user.id
+  def create    
+    @report = Report.new(title: report_params[:title], content: report_params[:content], user_id: current_user.id)
 
     if @report.save
       redirect_to @report, notice: t('controllers.common.notice_create', name: Report.model_name.human)
