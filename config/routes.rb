@@ -10,10 +10,10 @@ Rails.application.routes.draw do
     end
   end
   resources :books do
-    resources :comments, only: %i[create edit update destroy], module: :books
+    resources :comments, only: [:create], module: :books
   end
 
   resources :reports do
-    resources :comments, only: %i[create edit update destroy], module: :reports
+    resources :comments, only: [:create], module: :reports
   end
 end
