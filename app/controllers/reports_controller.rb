@@ -2,6 +2,7 @@
 
 class ReportsController < ApplicationController
   before_action :set_report, only: %i[show edit update destroy]
+  before_action :check_user, only: %i[edit update destroy]
 
   def index
     @reports = Report.all
@@ -46,5 +47,9 @@ class ReportsController < ApplicationController
 
   def report_params
     params.require(:report).permit(:title, :content)
+  end
+
+  def check_user
+    redirect_to reports_path if @report.user_id != current_user.id
   end
 end
