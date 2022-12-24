@@ -56,7 +56,7 @@
 <% elsif current_user.following?(@user) %>
   <%= link_to User.human_attribute_name(:unfollow), follow_path(@user.id), method: :delete %>
 <% else %>
-  <%= link_to User.human_attribute_name(:follow),follows_path(@user.id), method: :post %>
+  <%= link_to User.human_attribute_name(:follow),follows_path(id: @user.id), method: :post %>
 <% end %>
 
 <br>

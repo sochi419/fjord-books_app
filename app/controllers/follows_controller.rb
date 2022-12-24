@@ -2,8 +2,8 @@
 
 class FollowsController < ApplicationController
   def create
-    current_user.follow(params[:format])
-    redirect_to user_url(params[:format])
+    current_user.follow(params[:id])
+    redirect_to user_url(params[:id])
   end
 
   def destroy
